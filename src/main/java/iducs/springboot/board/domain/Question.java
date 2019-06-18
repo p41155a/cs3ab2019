@@ -1,14 +1,22 @@
 package iducs.springboot.board.domain;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 public class Question {
 	private long id; // primary key
 	private String title; 
 	private User writer;	
+	private List<Answer> answers;
 	private String contents;
 	private LocalDateTime createTime;	
 	
+	public List<Answer> getAnswers() {
+		return answers;
+	}
+	public void setAnswers(List<Answer> answers) {
+		this.answers = answers;
+	}
 	public Question() {}
 	public Question(String title, User writer, String contents) {
 		super();

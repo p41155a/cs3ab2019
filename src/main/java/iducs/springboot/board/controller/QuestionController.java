@@ -29,7 +29,7 @@ import iducs.springboot.board.utils.HttpSessionUtils;
 
 @Controller
 @RequestMapping("/questions")
-public class QuerstionController {
+public class QuestionController {
 	@Autowired QuestionService questionService; // 의존성 주입(Dependency Injection) : 
 	
 	@GetMapping("")
